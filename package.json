@@ -4,7 +4,8 @@
   "description": "CKEOGH Openclassrooms project 3",
   "main": "index.js",
   "scripts": {
-     "sass": "sass --watch ./sass/main.scss:./public/css/main.css --style expanded"
+     "sass": "sass --watch ./sass/main.scss:./public/css/main.css --style expanded",
+     "prefix": "postcss ./public/css/main.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
