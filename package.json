@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "CKEOGH Openclassrooms project 3",
+  "main": "index.js",
+  "scripts": {
+     "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ckeogh10/ohmyfood.git"
+  },
+  "keywords": [
+    "Openclassrooms"
+  ],
+  "author": "Callum Keogh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ckeogh10/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Ckeogh10/ohmyfood#readme"
+}
