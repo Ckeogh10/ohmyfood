@@ -1,0 +1,53 @@
+.home-explore {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+        
+    &__location {
+    display: flex;
+    justify-content: center;
+    background-color: #ecedea;  
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+        
+    &__reserve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f7f4;
+
+    p {
+        color: #6f706d;
+    }
+
+    }
+}
+
+
+
+
+.home-rest {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-rest__item {
+    width: 30%;
+    height: 10%;
+}
+
+.home-rest__img-container {
+    width: 200px;
+    height: 100px;
+}
+
+.home-rest__img {
+    object-fit: fill;
+    height: 100px;
+    width: 100%;
+}

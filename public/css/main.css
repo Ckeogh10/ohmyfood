@@ -1,3 +1,82 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
+#main-wrapper {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+* {
+  font-family: Roboto, arial, sans-serif;
+}
+
+h1 {
+  font-family: Shrikhand, arial, sans-serif;
+}
+
 h2 {
-  font-size: 10px;
+  font-size: 30px;
+}
+
+.home-logo {
+  font-size: 17px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.home-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.home-explore {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.home-explore__location {
+  display: flex;
+  justify-content: center;
+  background-color: #ecedea;
+}
+.home-explore__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.home-explore__reserve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f7f4;
+}
+.home-explore__reserve p {
+  color: #6f706d;
+}
+
+.home-rest {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-rest__item {
+  width: 30%;
+  height: 10%;
+}
+
+.home-rest__img-container {
+  width: 200px;
+  height: 100px;
+}
+
+.home-rest__img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
