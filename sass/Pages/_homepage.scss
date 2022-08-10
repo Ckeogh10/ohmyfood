@@ -53,11 +53,13 @@
     }
 
     &__icon {
-        margin-right: 30px;
+        margin: 0px 0px 0px 60px;
     }
 
     &__txt {
+        display: flex;
         font-weight: 900;
+        margin-left: 30px;
     }
 
     &__number {

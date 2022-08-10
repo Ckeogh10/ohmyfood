@@ -83,10 +83,12 @@ header {
   position: relative;
 }
 .home-guide__icon {
-  margin-right: 30px;
+  margin: 0px 0px 0px 60px;
 }
 .home-guide__txt {
+  display: flex;
   font-weight: 900;
+  margin-left: 30px;
 }
 .home-guide__number {
   position: absolute;
