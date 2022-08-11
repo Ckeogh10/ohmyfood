@@ -36,6 +36,25 @@ header {
 .home-logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.home-logo h1 {
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-arrow {
+  position: relative;
+  left: 0;
+  margin-left: 15px;
+  font-size: 22px;
 }
 
 footer {
@@ -70,6 +89,53 @@ footer {
   display: flex;
   align-items: center;
   font-size: 10px;
+}
+
+.menu-page {
+  position: relative;
+}
+
+.menu-banner {
+  position: relative;
+  height: 200px;
+}
+.menu-banner__img {
+  height: 300px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu {
+  background-color: #f6f7f4;
+  border-radius: 30px 30px 0px 0px;
+  padding-top: 30px;
+}
+
+.menu-restaurant {
+  display: flex;
+  flex: 1;
+  margin-top: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-restaurant h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 400;
+}
+.menu-restaurant__heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.menu-type {
+  color: #6f706d;
+  font-size: 18px;
 }
 
 .home-explore {
