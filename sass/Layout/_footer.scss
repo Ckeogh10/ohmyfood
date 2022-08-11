@@ -1,0 +1,38 @@
+footer {
+    background-color: #2e302e;
+    color: #e9efe8;
+    padding-top: 1px;
+}
+
+.footer-content {
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+    h1 {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    
+    p {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    }
+
+    &__item {
+        display: flex;
+        flex: 1;
+        gap: 5px;
+    }
+
+    &__icon {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    }
+}

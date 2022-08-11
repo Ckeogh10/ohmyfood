@@ -12,6 +12,10 @@ body {
   font-family: Roboto, arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: Shrikhand, arial, sans-serif;
 }
@@ -32,6 +36,40 @@ header {
 .home-logo {
   display: flex;
   justify-content: center;
+}
+
+footer {
+  background-color: #2e302e;
+  color: #e9efe8;
+  padding-top: 1px;
+}
+
+.footer-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.footer-content h1 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.footer-content p {
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.footer-content__item {
+  display: flex;
+  flex: 1;
+  gap: 5px;
+}
+.footer-content__icon {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
 }
 
 .home-explore {
@@ -77,24 +115,26 @@ header {
   justify-content: center;
   background-color: #f6f7f4;
   border: 1px solid #f6f7f4;
-  border-radius: 15px;
+  border-radius: 20px;
   margin: 15px 0px 15px 0px;
   padding: 10px 0px 10px 0px;
   position: relative;
 }
 .home-guide__icon {
-  margin: 0px 0px 0px 60px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
 .home-guide__txt {
   display: flex;
+  flex: 3;
   font-weight: 900;
-  margin-left: 30px;
 }
 .home-guide__number {
   position: absolute;
   left: 0;
   color: white;
-  padding: 5px 8px 5px 8px;
+  padding: 5px 10px 5px 10px;
   border-radius: 50%;
   background-color: #9356DC;
 }
@@ -102,21 +142,50 @@ header {
 .home-rest {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #f6f7f4;
+  padding-bottom: 60px;
 }
-
 .home-rest__item {
-  width: 30%;
-  height: 10%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: white;
+  width: 80%;
+  height: 100%;
+  border-radius: 0px 0px 10px 10px;
 }
-
 .home-rest__img-container {
-  width: 200px;
-  height: 100px;
+  display: flex;
+  overflow: hidden;
+  flex-basis: 150px;
 }
-
 .home-rest__img {
-  -o-object-fit: fill;
-     object-fit: fill;
-  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
   width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.home-rest__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-rest__txt {
+  color: black;
+  margin-left: 10px;
+}
+.home-rest__txt h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.home-rest__txt p {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.home-rest__heart {
+  margin-right: 18px;
+  font-size: 25px;
 }/*# sourceMappingURL=main.css.map */
