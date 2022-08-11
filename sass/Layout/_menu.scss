@@ -27,8 +27,64 @@
     }
 }
 
-.menu-type {
-    color: $color-faded;
-    font-size: $font-size-menu-type;
+.menu-entrée, .menu-meal, .menu-dessert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.menu-type {
+    color: $color-faded;
+    font-size: 16px;
+    display: flex;
+    width: 90%;
+    font-weight: 400;
+    position: relative;  
+    padding-bottom: 5px;
+}
+
+.menu-type::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid $color-tertiary;
+    width: 40px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+
+    &__title {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    &__info {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        overflow: auto;
+
+        p {
+            margin: 3px 0px 0px 0px;
+            font-size: 14px;
+        }
+    }
+    
+    &__txt {
+        color: $color-faded;
+    }
+
+    &__price {
+        font-weight: 900;
+        color: #2e3333;
+    }
+}
+    
