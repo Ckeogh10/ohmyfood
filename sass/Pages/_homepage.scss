@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     background-color: #ecedea; 
-    box-shadow: 2px 2px 6px #494948;
+    box-shadow: 3px 3px 7px #494948;
         p {
             font-weight: 900;
             color:#494948
@@ -19,16 +19,21 @@
         align-items: center;
         margin-right: 20px;
     }
-        
+
     &__reserve {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $color-background;
+    padding-bottom: 50px;
 
-    p {
-        color: #6f706d;
-    }
+        &__reserve + p {
+                color: grey;
+            } 
+        
+        h2 {
+            margin: 30px 0px 0px 0px;
+        }
 
     }
 }
@@ -37,6 +42,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+    h2 {
+        width: 90%;
+        align-items: flex-start;
+    }
 
     &__step {
         display: flex;
@@ -48,7 +60,8 @@
         border: 1px solid #f6f7f4;
         border-radius: 20px;
         margin: 15px 0px 15px 0px;
-        padding: 10px 0px 10px 0px;
+        padding: 5px 0px 5px 0px;
+        box-shadow: 0px 5px 10px lightgrey;
         position: relative;
     }
 
@@ -83,12 +96,18 @@
     background-color: $color-background;
     padding-bottom: 60px;
 
+    h2 {
+        width: 90%;
+        align-items: flex-start;
+        margin: 30px 0px 0px 0px;
+    }
+
     &__item {
     display: flex;
     flex: 1;
     flex-direction: column;
     background-color: white;
-    width: 80%;
+    width: 90%;
     height: 100%;
     border-radius: 0px 0px 10px 10px;
     }
