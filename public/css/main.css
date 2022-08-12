@@ -45,7 +45,7 @@ h2 {
 }
 
 .home-explore__button {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 20px 0px 20px;
 }
 
 .menu-order__button {
@@ -62,6 +62,7 @@ header {
   justify-content: center;
   align-items: center;
   flex: 1;
+  width: 100%;
 }
 .home-logo h1 {
   margin-top: 7px;
@@ -125,7 +126,8 @@ footer {
   width: 100%;
 }
 .menu-banner__img {
-  height: 300px;
+  min-height: 250px;
+  max-height: 1200px;
   width: 100%;
 }
 
