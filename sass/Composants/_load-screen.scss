@@ -1,4 +1,13 @@
 .load-screen {
+    animation: load-screen 3s ease-in-out normal forwards; 
+}
+
+@keyframes load-screen {
+    from {  opacity: 0; }
+    to {  opacity: 1;}
+}
+
+.load-anim {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,17 +23,12 @@
         z-index: 1;
         border: 4px dotted $color-primary;
         border-radius: 50%;
-        animation: load-icon 3s ease-in-out alternate forwards;
+        animation: load-icon 3s ease-out normal forwards;
 }
 
-}
-
-@keyframes load-screen {
-    from {  opacity: 0; }
-    to {  opacity: 1;}
 }
 
 @keyframes load-icon {
-    from {transform: rotate(-360deg);}
-    to {transition: transform 600ms ease-in-out;}
+    from {transform: rotate(-360deg); opacity: 1;}
+    to {transition: transform 600ms ease-out; opacity: 0;}
 }
