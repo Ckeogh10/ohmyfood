@@ -157,6 +157,33 @@
     &__heart {
         margin-right: 18px;
         font-size: 25px;
+        transition: 2s;
+        color: $color-faded;
+        transform-origin: bottom;
+
+        &--default {
+            transition: opacity .3s, transform 3s;
+        }
+
+        &--hover {
+            transition: opacity .3s, transform 3s;
+			opacity: 0;
+            display: none;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        &:hover &--hover {
+            opacity: 1;
+            display: block;
+        }
+
+        &:hover &--default {
+            opacity: 0;
+            display: none;
+        }
     }
 }
 

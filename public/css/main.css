@@ -5,7 +5,7 @@ body {
   height: 100%;
 }
 
-#main_wrapper {
+.main_wrapper {
   max-width: 992px;
   margin: 0 auto;
   height: 100%;
@@ -35,8 +35,8 @@ h2 {
 
 .primary-button {
   border-radius: 30px;
-  background-color: rgb(147, 86, 220);
-  background-image: linear-gradient(176deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 63%);
+  background: rgb(255, 121, 218);
+  background: linear-gradient(176deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 85%);
   box-shadow: 1px 1px 10px grey;
   color: white;
   text-decoration: none;
@@ -78,38 +78,37 @@ h2 {
   align-items: center;
 }
 .load-anim__icon {
-  position: fixed;
-  top: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+  border: 10px solid #99E2D0;
+  border-radius: 50%;
+  border-top: 10px solid #9356DC;
   width: 100px;
   height: 100px;
-  z-index: 1;
-  border: 4px dotted #9356DC;
-  border-radius: 50%;
-  -webkit-animation: load-icon 3s ease-out normal forwards;
-          animation: load-icon 3s ease-out normal forwards;
+  -webkit-animation: load-icon 3s linear forwards;
+          animation: load-icon 3s linear forwards;
+  position: fixed;
+  top: 50%;
+  z-index: 2;
 }
 
 @-webkit-keyframes load-icon {
-  from {
-    transform: rotate(-360deg);
+  0% {
+    transform: rotate(0deg);
     opacity: 1;
   }
-  to {
-    transition: transform 600ms ease-out;
+  100% {
+    transform: rotate(360deg);
     opacity: 0;
   }
 }
 
 @keyframes load-icon {
-  from {
-    transform: rotate(-360deg);
+  0% {
+    transform: rotate(0deg);
     opacity: 1;
   }
-  to {
-    transition: transform 600ms ease-out;
+  100% {
+    transform: rotate(360deg);
     opacity: 0;
   }
 }
@@ -475,6 +474,28 @@ footer {
 .home-rest__heart {
   margin-right: 18px;
   font-size: 25px;
+  transition: 2s;
+  color: #6f706d;
+  transform-origin: bottom;
+}
+.home-rest__heart--default {
+  transition: opacity 0.3s, transform 3s;
+}
+.home-rest__heart--hover {
+  transition: opacity 0.3s, transform 3s;
+  opacity: 0;
+  display: none;
+}
+.home-rest__heart:hover {
+  color: #9356DC;
+}
+.home-rest__heart:hover .home-rest__heart--hover {
+  opacity: 1;
+  display: block;
+}
+.home-rest__heart:hover .home-rest__heart--default {
+  opacity: 0;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
