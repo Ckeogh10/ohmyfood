@@ -8,10 +8,11 @@
     text-decoration: none;
     position: relative;
     z-index: 1;
+    cursor: pointer;     
 
     &:hover  {
         &::after {
-            opacity: 1;     
+            opacity: 1;
     }
     }
 

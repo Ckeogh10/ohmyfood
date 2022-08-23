@@ -66,6 +66,7 @@
         align-items: center;
         justify-content: space-between;
         width: 90%;
+        max-width: 350px;
         background-color: $color-background;
         border: 1px solid #f6f7f4;
         border-radius: 20px;
@@ -178,11 +179,11 @@
             animation: fontgradient 2s ease-in-out alternate;
         }
 
-        // @keyframes fontgradient { 
-        //     0%{background-position:0% 92%}
-        //     50%{background-position:100% 9%}
-        //     100%{background-position:0% 92%}
-        //     }  
+        @keyframes fontgradient { 
+            0%{background-position:0% 92%}
+            50%{background-position:100% 9%}
+            100%{background-position:0% 92%}
+        }  
 
         // &:hover &--hover {
         //     opacity: 1;

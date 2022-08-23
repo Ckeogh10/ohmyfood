@@ -42,6 +42,7 @@ h2 {
   text-decoration: none;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .primary-button:hover::after {
   opacity: 1;
@@ -171,20 +172,21 @@ footer {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px 20px 15px;
   margin-bottom: 0;
 }
 .footer-content h1 {
   font-size: 14px;
   font-weight: 300;
   margin: 0;
+  padding-bottom: 10px;
 }
-.footer-content p {
+.footer-content a {
+  text-decoration: none;
+  color: white;
   font-size: 12px;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin: 0;
+  padding-bottom: 7px;
 }
 .footer-content__item {
   display: flex;
@@ -194,7 +196,7 @@ footer {
 .footer-content__icon {
   display: flex;
   align-items: center;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .menu-page {
@@ -296,6 +298,7 @@ footer {
   font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-right: 20px;
 }
 .menu-item__info {
   display: flex;
@@ -319,6 +322,7 @@ footer {
   color: #2e3333;
   text-align: right;
   padding-right: 15px;
+  padding-left: 5px;
 }
 .menu-item__anim {
   width: 60px;
@@ -421,7 +425,7 @@ footer {
 @-webkit-keyframes dessert-load {
   from {
     opacity: 0;
-    transform: scaleY(0.5);
+    transform: scaleY(0.4);
   }
   to {
     opacity: 1;
@@ -432,7 +436,7 @@ footer {
 @keyframes dessert-load {
   from {
     opacity: 0;
-    transform: scaleY(0.5);
+    transform: scaleY(0.4);
   }
   to {
     opacity: 1;
@@ -499,6 +503,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 90%;
+  max-width: 350px;
   background-color: #f6f7f4;
   border: 1px solid #f6f7f4;
   border-radius: 20px;
@@ -590,6 +595,28 @@ footer {
   -webkit-text-fill-color: transparent;
   -webkit-animation: fontgradient 2s ease-in-out alternate;
           animation: fontgradient 2s ease-in-out alternate;
+}
+@-webkit-keyframes fontgradient {
+  0% {
+    background-position: 0% 92%;
+  }
+  50% {
+    background-position: 100% 9%;
+  }
+  100% {
+    background-position: 0% 92%;
+  }
+}
+@keyframes fontgradient {
+  0% {
+    background-position: 0% 92%;
+  }
+  50% {
+    background-position: 100% 9%;
+  }
+  100% {
+    background-position: 0% 92%;
+  }
 }
 
 @media screen and (min-width: 768px) {
