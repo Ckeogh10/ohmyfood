@@ -29,9 +29,9 @@
             background-color: $color-background;
             padding-bottom: 50px;
 
-                &__reserve + p {
-                        color: grey;
-                    } 
+                p {
+                    color: $color-faded;
+                }
                 
                 h2 {
                     margin: 30px 0px 0px 0px;
@@ -159,31 +159,40 @@
         font-size: 25px;
         transition: 2s;
         color: $color-faded;
-        transform-origin: bottom;
 
-        &--default {
-            transition: opacity .3s, transform 3s;
-        }
+        // &--default {
+        //     transition: opacity .3s, transform 3s;
+        // }
 
-        &--hover {
-            transition: opacity .3s, transform 3s;
-			opacity: 0;
-            display: none;
-        }
+        // &--hover {
+        //     transition: opacity .3s, transform 3s;
+		// 	opacity: 0;
+        //     display: none;
+        // }
 
         &:hover {
             color: $color-primary;
+            background: linear-gradient(176deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fontgradient 2s ease-in-out alternate;
         }
 
-        &:hover &--hover {
-            opacity: 1;
-            display: block;
-        }
+        // @keyframes fontgradient { 
+        //     0%{background-position:0% 92%}
+        //     50%{background-position:100% 9%}
+        //     100%{background-position:0% 92%}
+        //     }  
 
-        &:hover &--default {
-            opacity: 0;
-            display: none;
-        }
+        // &:hover &--hover {
+        //     opacity: 1;
+        //     display: block;
+        // }
+
+        // &:hover &--default {
+        //     opacity: 0;
+        //     display: none;
+        // }
     }
 }
 

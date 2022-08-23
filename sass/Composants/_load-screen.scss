@@ -14,12 +14,13 @@
 
     &__icon {
         margin: auto;
-        border: 10px solid $color-tertiary;
+        border: 15px solid #fff;
         border-radius: 50%;
-        border-top: 10px solid $color-primary;
-        width: 100px;
-        height: 100px;
-        animation: load-icon 3s linear forwards;
+        border-top: 15px solid $color-primary;
+        border-bottom: 15px solid $color-tertiary;
+        width: 75px;
+        height: 75px;
+        animation: load-icon 2s ease-in-out forwards;
         position: fixed;
         top: 50%;
         z-index: 2;

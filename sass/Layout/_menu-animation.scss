@@ -1,0 +1,29 @@
+.menu-entrée {
+    animation: entrée-load 1.5s ease-in-out normal forwards;
+    transform-origin: top;
+}
+
+@keyframes entrée-load {
+    0% {  opacity: 0; transform: scaleY(0.5);}
+    100% {  opacity: 1; transform: scaleY(1);}
+}
+
+.menu-meal {
+    animation: meal-load 2s ease-in-out normal forwards;
+    transform-origin: top;
+}
+
+@keyframes meal-load {
+    from {  opacity: 0; transform: scaleY(0.5);}
+    to {  opacity: 1; transform: scaleY(1.0);}
+}
+
+.menu-dessert {
+    animation: dessert-load 2.5s ease-in-out normal forwards;
+    transform-origin: top;
+}
+
+@keyframes dessert-load {
+    from {  opacity: 0; transform: scaleY(0.5);}
+    to {  opacity: 1; transform: scaleY(1.0);}
+}
