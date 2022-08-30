@@ -80,6 +80,75 @@ h2 {
     font-size: 16px;
   }
 }
+.load-screen {
+  -webkit-animation: load-screen 6s ease-in-out normal forwards;
+          animation: load-screen 6s ease-in-out normal forwards;
+}
+
+@-webkit-keyframes load-screen {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes load-screen {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.load-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load-anim__icon {
+  margin: auto;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #9356DC;
+  width: 75px;
+  height: 75px;
+  -webkit-animation: load-icon 1.5s ease-in-out 3 alternate forwards;
+          animation: load-icon 1.5s ease-in-out 3 alternate forwards;
+  position: fixed;
+  top: 45%;
+  z-index: 2;
+}
+
+@-webkit-keyframes load-icon {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes load-icon {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 .new-icon {
   position: absolute;
   right: 10px;
