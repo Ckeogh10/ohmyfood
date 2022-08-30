@@ -1,0 +1,24 @@
+.new-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: $color-tertiary;
+    border-radius: 3px;
+
+    p {
+        margin: 0;
+        padding: 5px;
+        font-size: 14px;
+        color: $color-tertiary-dark;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .new-icon {
+        p {
+            font-size: 16px;
+            padding: 7px;
+        }
+    }
+}
